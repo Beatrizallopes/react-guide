@@ -54,7 +54,8 @@ export function Menu(){
     function onItemClick(index){
         try{
             let copyMenuItens = [...defaultMenuItens];
-            copyMenuItens[0].active = false;
+            let indexActive = menuItens.findIndex((item)=> item.active === true);
+            copyMenuItens[indexActive].active = false;
             copyMenuItens[index].active = true;
             setMenuItens(copyMenuItens);
         } catch(err){

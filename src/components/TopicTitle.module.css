@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-left: 2px solid var(--red);
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    h1 {
+        font-size: 1rem;
+        color: var(--black)
+    }
+    h2 {
+        font-size: 0.8rem;
+        color: var(--grey-300);
+        margin-top: 0.2rem;
+        font-weight: 500;
+    }
+}
