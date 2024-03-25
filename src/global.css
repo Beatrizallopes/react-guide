@@ -1,0 +1,25 @@
+:root {
+    --white: #EBEBEB;
+    --grey-100: #D9D9D9;
+    --grey-300: #5A5855;
+    --black: #161718;
+    --red: #AB2515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--grey-100);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;  /* 1rem === 16px, usado para melhorar acessibilidades */
+}
