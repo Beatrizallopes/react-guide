@@ -6,6 +6,9 @@
     li {
         font-size: 0.8rem;
         margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        width: 60%;
+        font-weight: 600;
     }
 
 
