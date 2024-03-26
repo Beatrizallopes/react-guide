@@ -18,8 +18,20 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, input, textarea, button {
+body, input, textarea {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-size: 1rem;  /* 1rem === 16px, usado para melhorar acessibilidades */
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 0.8rem;  /* 1rem === 16px, usado para melhorar acessibilidades */
+    border: 1px solid var(--red);
+    background: var(--white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }

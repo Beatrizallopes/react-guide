@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import styles from './TopicTitle.module.css'
 
@@ -9,3 +10,4 @@ export function TopicTitle({title, subtitle}){
         </div>
     )
 }
+
