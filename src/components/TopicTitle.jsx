@@ -2,12 +2,12 @@
 
 import styles from './TopicTitle.module.css'
 
-export function TopicTitle({title, subtitle}){
+export function TopicTitle({title, subtitle, id}){
     return (
-        <div className={styles.header}> 
+        <section className={styles.header} id={id}> 
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
-        </div>
+        </section>
     )
 }
 

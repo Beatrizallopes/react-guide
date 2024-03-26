@@ -65,7 +65,7 @@ const librariesData = [
 export function Content(){
     return(
         <div className={styles.content}>
-            <TopicTitle title="O que é React?" subtitle="Conceito e importância"></TopicTitle>
+            <TopicTitle title="O que é React?" subtitle="Conceito e importância" id="o-que-e-react"></TopicTitle>
             <div className={styles.row}>
                 <ul>
                     <li>O React é uma biblioteca de JavaScript para construção de interfaces altamente interativas.</li>
@@ -75,14 +75,14 @@ export function Content(){
                 <img src={Explanation_1}></img>
             </div>
             <br></br>
-            <TopicTitle title="SSA vs SSR" subtitle="Entendendo padrões de renderização"></TopicTitle>
+            <TopicTitle title="SSA vs SSR" subtitle="Entendendo padrões de renderização" id="ssa-vs-ssr"></TopicTitle>
             <ul>
                 <li><b>SSR (Server Side Rendering)</b> é o padrão de renderização mais antigo (utilizado no HTML, Wordpress, etc). Nele, o navegador solicita uma rota e todo o front end e backend estão no servidor. Então o servidor recebe a requisição, monta a página e devolve o HTML/CSS/JS. Ainda é feito dessa forma na grande maioria das aplicações web existentes. Ainda é feito dessa forma na grande maioria das aplicações web existentes.</li>
                 <li><b>SPA (Single Page Application)</b> é o padrão mais atual, onde o backend não é mais responsável pela construção visual da tela, ele apenas retorna os dados, em formato JSON (Javascript Object Notation). Nesse modelo temos 2 aplicações: backend e frontend. Com isso é possível ter múltiplos frontend consumindo de um único backend.</li>
                 <li>O React é frequentemente usado para criar SPAs, onde toda a aplicação é carregada inicialmente pelo navegador e o conteúdo é dinamicamente atualizado conforme o usuário interage com a aplicação.</li>
             </ul>
             <br></br>
-            <TopicTitle title="Iniciando uma aplicação " subtitle="Usando Vite"></TopicTitle>
+            <TopicTitle title="Iniciando um projeto " subtitle="Usando Vite" id="iniciando-um-projeto"></TopicTitle>
             <div className={styles.row}>
             <ul>
                 <li><b>Vite</b> é uma ferramenta de construção de aplicativos web moderna e extremamente rápida, especialmente otimizada para o desenvolvimento de front-end</li>
@@ -101,7 +101,7 @@ export function Content(){
             </a>
             </div>
             <br></br>
-            <TopicTitle title="Explorando os arquivos" subtitle="Explorando a estrutura de pastas e arquivos"></TopicTitle>
+            <TopicTitle title="Explorando os arquivos" subtitle="Explorando a estrutura de pastas e arquivos" id="explorando-os-arquivos"></TopicTitle>
             <ul>
                 <li>A estrutura básica do projeto é assim:</li>
                 <img src={ExampleExploringFiles}></img>
@@ -116,7 +116,7 @@ export function Content(){
             <img src={Explanation_3} style={{minHeight:'11rem'}}></img>
             </div>        
             <br></br>
-            <TopicTitle title="Componentes e Propriedades" subtitle="Agilidade na criação e praticidade na manutenção"></TopicTitle>
+            <TopicTitle title="Componentes e Propriedades" subtitle="Agilidade na criação e praticidade na manutenção" id="componentes-e-propriedades"></TopicTitle>
             <div className={styles.row}>
                 <ul>
                     <li>Vamos agora ver o que são <b>componentes</b>. Esse conceito é muito importante e utilizado em todas as bibliotecas frontend (se não igual, muito parecido).</li>
@@ -131,7 +131,7 @@ export function Content(){
             </div>
           
             <br></br>
-            <TopicTitle title="Estados" subtitle="Atualização dinâmica de componentes"></TopicTitle>
+            <TopicTitle title="Estados" subtitle="Atualização dinâmica de componentes" id="estados"></TopicTitle>
             <div className={styles.row}>
                 <ul>
                     <li>O <b>estados</b> são variáveis que eu quero que o componente monitore. Ou seja, quando eu quero que o React mostre algo quando a minha variável mudar, eu uso estados.</li>
@@ -141,9 +141,8 @@ export function Content(){
                 </ul>
                 <img src={Explanation_5} style={{minHeight:'12rem'}}></img>
             </div>
-
             <br></br>
-            <TopicTitle title="Bibliotecas interessantes" subtitle="Bibliotecas úteis para o desenvolvimento"></TopicTitle>
+            <TopicTitle title="Bibliotecas úteis" subtitle="Bibliotecas úteis para o desenvolvimento" id="bibliotecas-uteis"></TopicTitle>
             <Table 
                 dataSource={librariesData} 
                 columns={columns}

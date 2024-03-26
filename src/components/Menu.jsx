@@ -6,43 +6,38 @@ import CheckInactive from '../assets/check-inactive.svg';
 
 const defaultMenuItens = [
     {
-        id: 'o-que-e-react',
+        id: '#o-que-e-react',
         label: 'O que é react?',
         active: true,
     },
     {
-        id: 'ssa-vs-ssr',
+        id: '#ssa-vs-ssr',
         label: 'SSA vs SSR',
         active: false,
     },
     {
-        id: 'iniciando-um-projeto',
+        id: '#iniciando-um-projeto',
         label: 'Iniciando um projeto',
         active: false,
     },
     {
-        id: 'explorando-os-arquivos',
+        id: '#explorando-os-arquivos',
         label: 'Explorando os arquivos',
         active: false,
     },
     {
-        id: 'componentes',
-        label: 'Componentes',
+        id: '#componentes-e-propriedades',
+        label: 'Componentes e Propriedades',
         active: false,
     },
     {
-        id: 'propriedades',
-        label: 'Propriedades',
-        active: false,
-    },
-    {
-        id: 'estados',
+        id: '#estados',
         label: 'Estados',
         active: false,
     },
     {
-        id: 'bibliotecas-legais',
-        label: 'Bibliotecas legais',
+        id: '#bibliotecas-uteis',
+        label: 'Bibliotecas úteis',
         active: false,
     }
 
@@ -71,10 +66,10 @@ export function Menu(){
                 {menuItens.map((item, index)=>{
                     let icon = item.active ? CheckActive : CheckInactive;
                     return (
-                        <div className={styles.item} key={item?.id} onClick={()=> {onItemClick(index)}}>
+                        <a className={styles.item} key={item?.id} onClick={()=> {onItemClick(index)}} href={item?.id}>
                             <img src={icon} alt="checkbox"></img>
                             <h1>{item?.label}</h1>
-                        </div>
+                        </a>
                     )
                 })}
 
