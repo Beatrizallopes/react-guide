@@ -68,7 +68,7 @@ export function Menu(){
                     return (
                         <a className={styles.item} key={item?.id} onClick={()=> {onItemClick(index)}} href={item?.id}>
                             <img src={icon} alt="checkbox"></img>
-                            <h1>{item?.label}</h1>
+                            <h1 style={{color: item.active ? 'var(--red' : 'var(--black'}}>{item?.label}</h1>
                         </a>
                     )
                 })}

@@ -6,11 +6,13 @@
     overflow-y: auto;
 
     ul {
+        animation: slideDown 1s ease forwards;
         img {
             margin-bottom: 1rem;
             margin-top: 0.5rem;
             height: 13rem;
         }
+        
     }
 
     li {
@@ -24,10 +26,10 @@
 .buttons {
     display: flex;
     flex-direction: row;
-
+    animation: slideDown 0.5s ease forwards;
     a {
         margin-top: 1rem;
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
     }
 }
 
@@ -41,3 +43,15 @@
         min-height: 15rem;
     }
 }
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+

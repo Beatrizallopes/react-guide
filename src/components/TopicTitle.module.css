@@ -5,6 +5,7 @@
     border-left: 2px solid var(--red);
     padding-left: 0.5rem;
     margin-bottom: 1rem;
+    animation: slideDown 1s ease forwards;
     h1 {
         font-size: 1rem;
         color: var(--black)
@@ -14,5 +15,16 @@
         color: var(--grey-300);
         margin-top: 0.2rem;
         font-weight: 500;
+    }
+}
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
 }

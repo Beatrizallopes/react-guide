@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    animation: slideIn 1s ease forwards;
     p {
         color: var(--grey-300);
         font-size: 0.8rem;
@@ -50,3 +51,15 @@
         margin-right: 0.5rem;
     }
 }
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
